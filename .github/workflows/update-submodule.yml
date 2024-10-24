@@ -1,0 +1,37 @@
+# .github/workflows/update_submodules.yml
+
+name: Update Submodules Based on Release
+
+on:
+  push:
+    branches:
+      - develop  # Adjust the branch according to your needs
+  workflow_dispatch:  # Allows manual triggering of the workflow
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true  # Ensures submodules are checked out
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Run release.py script
+        run: python .github/release.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+          git push origin HEAD
