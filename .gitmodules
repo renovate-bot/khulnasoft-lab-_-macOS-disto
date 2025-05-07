@@ -511,3 +511,90 @@
 [submodule "mDNSResponder"]
 	path = mDNSResponder
 	url = https://github.com/apple-oss-distributions/mDNSResponder
+
+[submodule "CoreOSMakefiles"]
+	path = Developer_Tools/CoreOSMakefiles
+	url = https://github.com/apple-oss-distributions/CoreOSMakefiles
+[submodule "bison"]
+	path = bison
+	url = https://github.com/apple-oss-distributions/bison
+[submodule "bootstrap_cmds"]
+	path = Developer_Tools/bootstrap_cmds
+	url = https://github.com/apple-oss-distributions/bootstrap_cmds
+[submodule "cctools"]
+	path = Developer_Tools/cctools
+	url = https://github.com/apple-oss-distributions/cctools
+[submodule "developer_cmds"]
+	path = Developer_Tools/eveloper_cmds
+	url = https://github.com/apple-oss-distributions/developer_cmds
+[submodule "gm4"]
+	path = Developer_Tools/gm4
+	url = https://github.com/apple-oss-distributions/gm4
+[submodule "gnumake"]
+	path = Developer_Tools/gnumake
+	url = https://github.com/apple-oss-distributions/gnumake
+[submodule "gperf"]
+	path = Developer_Tools/gperf
+	url = https://github.com/apple-oss-distributions/gperf
+[submodule "headerdoc"]
+	path = Developer_Tools/headerdoc
+	url = https://github.com/apple-oss-distributions/headerdoc
+[submodule "ld64"]
+	path = Developer_Tools/ld64
+	url = https://github.com/apple-oss-distributions/ld64
+[submodule "pb_makefiles"]
+	path = Developer_Tools/pb_makefiles
+	url = https://github.com/apple-oss-distributions/pb_makefiles
+[submodule "Git"]
+	path = Developer_Tools/Git
+	url = https://github.com/apple-oss-distributions/Git
+[submodule "libgit2"]
+	path = Developer_Tools/libgit2
+	url = https://github.com/apple-oss-distributions/libgit2
+[submodule "tapi"]
+	path = Developer_Tools/tapi
+	url = https://github.com/apple-oss-distributions/tapi
+[submodule "flex"]
+	path = Developer_Tools/flex
+	url = https://github.com/apple-oss-distributions/flex
+
+[submodule "ChatServer"]
+	path = OS_X_Server/ChatServer
+	url = https://github.com/apple-oss-distributions/ChatServer
+[submodule "PostgreSQL"]
+	path = OS_X_Server/PostgreSQL
+	url = https://github.com/apple-oss-distributions/PostgreSQL
+[submodule "SpamAssassin"]
+	path = OS_X_Server/SpamAssassin
+	url = https://github.com/apple-oss-distributions/SpamAssassin
+[submodule "amavisd"]
+	path = OS_X_Server/amavisd
+	url = https://github.com/apple-oss-distributions/amavisd
+[submodule "apache_mod_bonjour"]
+	path = OS_X_Server/apache_mod_bonjour
+	url = https://github.com/apple-oss-distributions/apache_mod_bonjour
+[submodule "apache_mod_bw"]
+	path = OS_X_Server/apache_mod_bw
+	url = https://github.com/apple-oss-distributions/apache_mod_bw
+[submodule "apache_mod_encoding2"]
+	path = OS_X_Server/apache_mod_encoding2
+	url = https://github.com/apple-oss-distributions/apache_mod_encoding2
+[submodule "clamav"]
+	path = OS_X_Server/clamav
+	url = https://github.com/apple-oss-distributions/clamav
+[submodule "dovecot"]
+	path = OS_X_Server/dovecot
+	url = https://github.com/apple-oss-distributions/dovecot
+[submodule "HTTPServer"]
+	path = OS_X_Server/HTTPServer
+	url = https://github.com/apple-oss-distributions/HTTPServer
+[submodule "freeradius"]
+	path = OS_X_Server/freeradius
+	url = https://github.com/apple-oss-distributions/freeradius
+
+[submodule "libiconv"]
+	path = DistroiOS/libiconv
+	url = https://github.com/apple-oss-distributions/libiconv
+[submodule "WebKit"]
+	path = DistroiOS/WebKit
+	url = https://github.com/apple-oss-distributions/WebKit

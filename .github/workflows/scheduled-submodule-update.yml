@@ -1,0 +1,32 @@
+name: Scheduled Submodule Update
+
+on:
+  schedule:
+    # Runs every day at 3:00 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo with submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Update submodules
+        run: |
+          git submodule update --remote --recursive
+          git add .
+          git commit -m "Auto-update submodules [CI skip]" || echo "No changes to commit"
+
+      - name: Push changes
+        run: git push origin HEAD
