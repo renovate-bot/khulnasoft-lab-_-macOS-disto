@@ -1,0 +1,13 @@
+name: Observability Hook
+description: Send metrics or logs to external service
+inputs:
+  message:
+    required: true
+    description: Message to send
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        echo "Sending log: ${{ inputs.message }}"
+        # Placeholder for curl/post to monitoring endpoint
+      shell: bash

@@ -1,0 +1,9 @@
+name: Commit Stream Export
+description: Parse git logs and send to Postgres
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        pip install psycopg2
+        python3 .github/actions/commit-stream/stream_commits.py
+      shell: bash

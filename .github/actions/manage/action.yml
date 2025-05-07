@@ -1,0 +1,11 @@
+name: Manage Submodules
+description: Auto-update git submodules recursively
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        git submodule update --remote --recursive
+        git add .
+        git commit -m "Auto-update submodules [CI skip]" || echo "No changes"
+        git push origin HEAD
+      shell: bash
